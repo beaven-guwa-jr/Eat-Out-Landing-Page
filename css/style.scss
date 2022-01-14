@@ -13,10 +13,6 @@
     src: url('../fonts/Archivo-Bold.woff');
 }
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -148,6 +144,7 @@ body{
           background-color: #000000; 
           color: white;
           border-radius: 0 60px 60px 60px;
+          outline: none;
         }
         p,.btn{
           font-size: 13px;
@@ -294,7 +291,6 @@ header{
   .inner{
     @include full-cntr();
     flex-direction: column;
-    
     .images{
       background-image: url('../img/ROUND\ BG\ \(2\).png');
       background-position: center;
@@ -536,7 +532,13 @@ header{
             padding: 7px 20px;
             input{
               border: none;
+              background-color: transparent;
+              font-size:15px;
+              outline:none;
+              text-align: start;
+
             }
+            span{font-size: 20px, }
         }
       }
       .payment{
@@ -584,7 +586,6 @@ header{
             text-align: start;
             font-size: 13px;
             outline: none;
-           
           }
           input[type="radio"]:checked{
             background-color: red;

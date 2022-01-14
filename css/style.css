@@ -13,10 +13,6 @@
   src: url("../fonts/Archivo-Bold.woff");
 }
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -204,6 +200,7 @@ body * .btn {
   background-color: #000000;
   color: white;
   border-radius: 0 60px 60px 60px;
+  outline: none;
 }
 
 body * p, body * .btn {
@@ -767,6 +764,14 @@ header nav .mobile-nav.is-active {
 
 .donate .inner .donations .tab-content__outer .is-open input {
   border: none;
+  background-color: transparent;
+  font-size: 15px;
+  outline: none;
+  text-align: start;
+}
+
+.donate .inner .donations .tab-content__outer .is-open span {
+  font-size: 20px;
 }
 
 .donate .inner .donations .payment .method, .donate .inner .donations .payment label {
